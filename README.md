@@ -7,7 +7,7 @@ O controle de tarefas desse projeto sera realizado no GitHub
 
 ## icones
 
-:novo: nova funcionalidade
+:new: nova funcionalidade
 :arrow_up: atualização
-:besouro:correção de bug
+:beetle:correção de bug
 :checkered_flag: release
