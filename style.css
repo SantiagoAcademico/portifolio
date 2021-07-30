@@ -1,3 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Muli:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap");
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.embrulho-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000E19; 
+    
+}
+
+.embrulho-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 5s;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.3);
+    }
+
+    100%{
+        transforme:scale(1)
+    }
+}
+
+.embrulho-baner{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    
+
+}
+
+.embrulho-baner h1{
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-family: "baloo da 2", sans-serif;
+    font-weight: 300;
+    line-height: 1.3;
+    animation: movBaner 1.5s;
+}
+
+.embrulho-baner p{
+    color: #01e5ce;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-family:  Courier New, monospace, sans-serif;
+    font-weight: 500;
+    animation: movBaner 2s;
+}
+
+.embrulho-baner button{
+    color: #ffffff;
+    font-family: Courier New, monospace, sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+    background: #024173;
+    padding: 1rem 2rem;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: movBaner 2.5s;
+}
+
+@keyframes movBaner{
+    0%{
+        transform: translatey(10rem) rotatey(-50deg);
+        opacity: 0
+    }
+
+    100%{
+        transform: translatey(0) rotatey(0);
+        opacity: 1
+    }
+}
+
+.embrulho-baner button:hover{
+    color:#011627;
+    background-color: #65DBCA;
+}
+
